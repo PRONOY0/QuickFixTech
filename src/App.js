@@ -10,7 +10,7 @@ function App() {
   const [mobileNav, setMobileNav] = useState(false);
 
   const navHandler = () => {
-    setMobileNav(prev=>!prev);
+    setMobileNav((prev) => !prev);
   };
 
   return (
@@ -116,15 +116,21 @@ function App() {
 
           <button className="signup navBtn loginMobile">Sign Up</button>
 
-          <button onClick={navHandler} className='mobileNavBtn'>
-            {
-              mobileNav ? (<RxCross1 className="mobile-navigating-icon"/>) : (<FaBars className="mobile-navigating-icon"/>)
-            } 
+          <button onClick={navHandler} className="mobileNavBtn">
+            {mobileNav ? (
+              <RxCross1 className="mobile-navigating-icon" />
+            ) : (
+              <FaBars className="mobile-navigating-icon" />
+            )}
           </button>
         </div>
       </motion.nav>
 
-      <motion.div className={`navigation-div-for-mobile ${mobileNav ? "visible" : "hidden"}`}>
+      <motion.div
+        className={`navigation-div-for-mobile ${
+          mobileNav ? "visible" : "hidden"
+        }`}
+      >
         <ul>
           <li className="nav-txt">Docs</li>
           <li className="nav-txt">Pricing</li>
@@ -364,9 +370,9 @@ function App() {
               </svg>
             </div>
 
-            <h3 className="title-of-features">Secure for your org</h3>
+            <h3 className="title-of-features featureIIItitle">Secure for your org</h3>
 
-            <p className="quick-features-desc">
+            <p className="quick-features-desc featureIIIdesc">
               We keep your data safe by taking top security measures.
             </p>
           </motion.div>
