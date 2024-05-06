@@ -130,8 +130,12 @@ function App() {
         className={`navigation-div-for-mobile ${
           mobileNav ? "visible" : "hidden"
         }`}
+
+        initial={{opacity:0}}
+        whileInView={{opacity:1}}
       >
         <ul>
+          <button className="mobileNavBtn" onClick={navHandler}><RxCross1 className="cross-Icon"/></button>
           <li className="nav-txt">Docs</li>
           <li className="nav-txt">Pricing</li>
           <li className="nav-txt">Status</li>

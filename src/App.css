@@ -37,7 +37,12 @@
 
 .navbar {
   display: flex;
-  max-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #27272a71;
+  backdrop-filter: blur(10px);
+  width: 97%;
   padding: 0vw 2vw;
   justify-content: space-between;
   align-items: center;
@@ -73,6 +78,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding-top: 15vh;
   justify-content: center;
   align-items: center;
 }
@@ -85,7 +91,7 @@ html {
   width: 60%;
   font-style: normal;
   font-weight: 800;
-  line-height: 3rem;
+  line-height: 145%;
   letter-spacing: -0.036rem;
   padding-left: 20vw;
 }
@@ -270,7 +276,7 @@ html {
   font-size: 1.125vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.125vw; /* 100% */
+  line-height: 100%; /* 100% */
   opacity: 0.76;
   width: 86%;
 }
@@ -488,11 +494,29 @@ footer {
     padding-top: 1rem;
   }
 
+  .cross-Icon{
+    color: #fff;
+    font-size: 7vw;
+  }
+
+  .mobileNavBtn{
+    outline: none;
+    border: none;
+    position: relative;
+    right: 0;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
   .navigation-div-for-mobile{
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
     background-color: #1f1f1f;
-    height: 30vh;
-    padding-top:14vh;
+    height: 100vh;
   }
 
   .nav-txt{
@@ -506,7 +530,8 @@ footer {
   ul{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
+    width: 100%;
   }
 
   .mobile-navigating-icon{
