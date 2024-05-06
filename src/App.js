@@ -1,7 +1,6 @@
 import "./App.css";
 import { CgArrowRight } from "react-icons/cg";
 import heroImage from "./assets/hero_image 1.png";
-import { motion } from "framer-motion";
 import { useState } from "react";
 import { RxCross1 } from "react-icons/rx";
 import { FaBars } from "react-icons/fa";
@@ -15,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <motion.nav
+      <nav
         initial={{
           opacity: 0,
         }}
@@ -70,9 +69,9 @@ function App() {
           <button className="login navBtn">Login</button>
           <button className="signup navBtn">Sign Up</button>
         </div>
-      </motion.nav>
+      </nav>
 
-      <motion.nav
+      <nav
         initial={{
           opacity: 0,
         }}
@@ -124,9 +123,9 @@ function App() {
             )}
           </button>
         </div>
-      </motion.nav>
+      </nav>
 
-      <motion.div
+      <div
         className={`navigation-div-for-mobile ${
           mobileNav ? "visible" : "hidden"
         }`}
@@ -142,10 +141,10 @@ function App() {
           <li className="nav-txt">FAQs</li>
           <li className="nav-txt">Contact Us</li>
         </ul>
-      </motion.div>
+      </div>
 
       <section className="heroSection">
-        <motion.h1
+        <h1
           initial={{
             translateY: 50,
           }}
@@ -156,9 +155,9 @@ function App() {
           className="title-heroSection"
         >
           Information you need during on-call emergencies
-        </motion.h1>
+        </h1>
 
-        <motion.p
+        <p
           initial={{
             translateY: 50,
           }}
@@ -170,9 +169,9 @@ function App() {
         >
           Quickly link new on-call tickets to similar past incidents and their
           solutions. All directly in Slack the moment an incident happens.
-        </motion.p>
+        </p>
 
-        <motion.button
+        <button
           initial={{
             translateY: 50,
           }}
@@ -183,9 +182,9 @@ function App() {
           className="getStrt"
         >
           Get Started <CgArrowRight />
-        </motion.button>
+        </button>
 
-        <motion.img
+        <img
           initial={{
             translateY: 50,
             opacity: 0,
@@ -201,7 +200,7 @@ function App() {
         />
       </section>
 
-      <motion.section
+      <section
         initial={{
           opacity: 0,
         }}
@@ -211,7 +210,7 @@ function App() {
         }}
         className="quick-features"
       >
-        <motion.h2
+        <h2
           initial={{
             translateY: 30,
           }}
@@ -222,10 +221,10 @@ function App() {
           className="quick-features-title"
         >
           Quick solutions, less stress
-        </motion.h2>
+        </h2>
 
         <div className="all-features">
-          <motion.div
+          <div
             initial={{
               translateY: 40,
             }}
@@ -273,9 +272,9 @@ function App() {
               Save 20-30 minutes per on-call ticket - no more searching for
               relevant issues and runbooks.
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div
+          <div
             initial={{
               translateY: 40,
             }}
@@ -330,9 +329,9 @@ function App() {
               Works with PagerDuty, Jira, or custom Slack alerts—Pandem
               integrates with any system.
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div
+          <div
             initial={{
               translateY: 40,
             }}
@@ -379,12 +378,12 @@ function App() {
             <p className="quick-features-desc featureIIIdesc">
               We keep your data safe by taking top security measures.
             </p>
-          </motion.div>
+          </div>
         </div>
-      </motion.section>
+      </section>
 
       <section className="mini-hero">
-        <motion.h2
+        <h2
           initial={{
             translateY: 30,
             opacity: 0,
@@ -396,9 +395,9 @@ function App() {
           className="mini-hero-title"
         >
           Instant setup, no custom code
-        </motion.h2>
+        </h2>
 
-        <motion.p
+        <p
           initial={{
             translateY: 40,
             opacity: 1,
@@ -411,9 +410,9 @@ function App() {
         >
           Invite the bot, pick a channel, and you're set—no custom code needed,
           and no vendor lock-in.
-        </motion.p>
+        </p>
 
-        <motion.img
+        <img
           initial={{
             translateY: 40,
             opacity: 1,
@@ -429,7 +428,7 @@ function App() {
       </section>
 
       <section className="get-in-touch">
-        <motion.h2
+        <h2
           initial={{
             translateY: 30,
             opacity: 0,
@@ -442,9 +441,9 @@ function App() {
           className="get-in-touch-heading"
         >
           Get in touch
-        </motion.h2>
+        </h2>
 
-        <motion.p
+        <p
           initial={{
             translateY: 30,
             opacity: 0,
@@ -457,9 +456,9 @@ function App() {
           className="get-in-touch-desc"
         >
           Request a demo, or hop on a call.
-        </motion.p>
+        </p>
 
-        <motion.button
+        <button
           initial={{
             translateY: 30,
             opacity: 0,
@@ -472,10 +471,10 @@ function App() {
           className="getStrt"
         >
           Get Started <CgArrowRight />
-        </motion.button>
+        </button>
       </section>
 
-      <motion.footer
+      <footer
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, transition: { duration: 1.5 } }}
       >
@@ -512,7 +511,7 @@ function App() {
           <p className="txtV">Contact us</p>
           <p className="txtV">Terms of service</p>
         </div>
-      </motion.footer>
+      </footer>
     </div>
   );
 }
